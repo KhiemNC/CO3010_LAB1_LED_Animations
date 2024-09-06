@@ -32,7 +32,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define RUN_EXERCISE 1
+#define RUN_EXERCISE 2
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -92,6 +92,9 @@ int main(void)
 	  case 1:
 		  exercise1_init();
 		  break;
+	  case 2:
+		  exercise2_init();
+		  break;
 	  default:
 		  // Do nothing
 		  break;
@@ -107,6 +110,10 @@ int main(void)
 	  	  case 1:
 //	  		  exercise1_init();
 			  exercise1_run();
+			  break;
+		  case 2:
+//			  exercise2_init();
+			  exercise2_run();
 			  break;
 		  default:
 			  // Do nothing
