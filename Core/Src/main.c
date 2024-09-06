@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "exercise1.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,7 +32,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define RUN_EXERCISE 1
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -87,13 +87,32 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  switch (RUN_EXERCISE)
+  {
+	  case 1:
+		  exercise1_init();
+		  break;
+	  default:
+		  // Do nothing
+		  break;
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  switch (RUN_EXERCISE)
+	  {
+	  	  case 1:
+//	  		  exercise1_init();
+			  exercise1_run();
+			  break;
+		  default:
+			  // Do nothing
+			  break;
+	  }
+
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
