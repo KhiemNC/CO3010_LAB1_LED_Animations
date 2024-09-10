@@ -27,6 +27,7 @@
 #include "exercise3.h"
 #include "exercise4.h"
 #include "exercise5.h"
+#include "exercise6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,7 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define RUN_EXERCISE 5
+#define RUN_EXERCISE 6
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -108,6 +109,9 @@ int main(void)
 	  case 5:
 		  exercise5_init();
 		  break;
+	  case 6:
+		  exercise6_init();
+		  break;
 	  default:
 		  // Do nothing
 		  break;
@@ -139,6 +143,10 @@ int main(void)
 		  case 5:
 //			  exercise5_init();
 			  exercise5_run();
+			  break;
+		  case 6:
+//			  exercise6_init();
+			  exercise6_run();
 			  break;
 		  default:
 			  // Do nothing
