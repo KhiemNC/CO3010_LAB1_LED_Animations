@@ -5,4 +5,6 @@
 *.ld
 *.mxproject
 *.cproject
-Proteus/STM32_Schematic_All.pdsprj.KNC.nguye.workspace
+*.nguye.workspace
+*.pdsbak
+*.PDF

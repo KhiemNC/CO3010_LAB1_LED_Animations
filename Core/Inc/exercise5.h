@@ -12,5 +12,6 @@
 
 void exercise5_init();
 void exercise5_run();
+void display7SEG_2(int num);
 
 #endif /* INC_EXERCISE5_H_ */
